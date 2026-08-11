@@ -82,7 +82,7 @@ body{
 
 .calc-button:last-child:hover{
     background-color: inherit;
-    colour: inherit;
+    color: inherit;
 }
 
 .calc-button:hover{
