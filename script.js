@@ -60,3 +60,15 @@ function handleMath(symbol){
     buffer = '0';
 }
 
+function flushOperation(intBuffer){
+    if(previousOperator === '+'){
+        runningTotal += intBuffer;
+    }else if(previousOperator === '-'){
+        runningTotal -= intBuffer;
+    }else if(previousOperator === '×'){
+        previousOperator *= intBuffer;
+    }else if (previousOperator === '÷'){
+        runningTotal /= intBuffer;
+    }
+}
+
